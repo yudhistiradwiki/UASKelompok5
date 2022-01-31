@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewJud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="@string/judul"
+                    android:textColor="@color/black"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/textViewSubJud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="@string/subjud1"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/textViewMade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="@string/subjud3"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="9sp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="352dp"
+                    android:layout_height="277dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/ic_login"
+                    tools:layout_editor_absoluteX="14dp"
+                    tools:layout_editor_absoluteY="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="299dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:endIconMode="clear_text"
+                    android:id="@+id/tiName"
+                    app:startIconDrawable="@drawable/ic_user"
+                    android:gravity="center">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="299dp"
+                        android:hint="Nama Pengguna"
+                        android:inputType="text"
+                        android:layout_height="50dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="299dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:endIconMode="password_toggle"
+                    android:id="@+id/tiPassword"
+                    app:startIconDrawable="@drawable/ic_pass"
+                    android:gravity="center">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="299dp"
+                        android:hint="Kata Sandi"
+                        android:inputType="textPassword"
+                        android:layout_height="50dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/masuk"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Masuk"
+                    android:layout_marginRight="5dp"/>
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Daftar" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

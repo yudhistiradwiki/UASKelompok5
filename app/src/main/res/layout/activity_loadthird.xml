@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoadthirdActivity">
+
+
+    <ImageView
+        android:id="@+id/ivsplash"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:srcCompat="@drawable/ic_loadthird"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/logo_splash_screnn"/>
+
+    <TextView
+        android:id="@+id/tvsplash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="@string/judul"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvsplash2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="20sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/loadthird"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/ivdot"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_dottt"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/logo_splash_screnn"/>
+
+    <LinearLayout
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/pref"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="@string/next"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

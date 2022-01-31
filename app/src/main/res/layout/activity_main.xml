@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/ivsplash"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:srcCompat="@drawable/ic_book"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/logo_splash_screnn"/>
+
+    <TextView
+        android:id="@+id/tvsplash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="@string/judul"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linearProgressIndicator"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="700dp"
+        android:indeterminate="true"
+        app:hideAnimationBehavior="inward"
+        app:indicatorDirectionLinear="leftToRight"
+        app:showAnimationBehavior="outward"
+        app:indeterminateAnimationType="disjoint"/>
+</LinearLayout>

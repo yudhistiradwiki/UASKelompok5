@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BooksActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Judul buku"
+                android:padding="15dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_buku">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiPenulis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/Penulis"
+                android:padding="10dp"
+                app:startIconDrawable="@drawable/ic_penulis">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiPenerbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/Penerbit"
+                android:padding="10dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_penerbit">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiTahun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/Tahunterbit"
+                android:padding="10dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_tahun">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiSinopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/sinopsis"
+                android:padding="10dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_sinopsis">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="320dp"
+                    android:layout_height="100dp"
+                    android:inputType="text|textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPhoto"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:text="Tambahkan Cover Buku"
+                app:icon="@drawable/ic_photo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Tambah"
+                app:icon="@drawable/ic_add" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPrint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Lihat"
+                app:icon="@drawable/ic_print" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listView2"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:outlineAmbientShadowColor="@color/purple_200"
+                android:outlineSpotShadowColor="@color/purple_200"
+                android:padding="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

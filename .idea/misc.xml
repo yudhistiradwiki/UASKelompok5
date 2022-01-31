@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/drawable/ic_lib.xml" value="0.19166666666666668" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/activity_books.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/activity_dashboard.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/activity_detail.xml" value="0.22" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/activity_loadsecond.xml" value="0.1" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/activity_login.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/activity_notif.xml" value="0.1" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/activity_read.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/activity_updatebook.xml" value="0.22" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/activity_updateuser.xml" value="0.1" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/activity_user.xml" value="0.22" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/item_data.xml" value="0.1" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/item_databook.xml" value="0.1" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/layout/item_row.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android Project/UASKelompok5/app/src/main/res/menu/menu_main.xml" value="0.17552083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
